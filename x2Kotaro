@@ -1,0 +1,7 @@
+local key = _G.Key
+local check = "https://raw.githubusercontent.com/DRAGONXHUB/WHITELIST.x2Kotaro/main/Check.php?key=" .. key
+if game:HttpGet(check) == "Whitelisted" then
+loadstring(game:HttpGet("scripthere"))()
+else
+game.Players.LocalPlayer:Kick("Get New Script ServerDiscordMe?")
+end
